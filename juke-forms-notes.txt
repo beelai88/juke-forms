@@ -1,0 +1,16 @@
+--- Forms --- 
+
+ng-model directive lets you say, "this form input is connected to some variable in the scope" --> this is called data binding 
+	angular has 2 way data binding - the data on the page is bound to the models on the scope and vice versa 
+
+- every input tag (form tags) is bound to an ngModelController so you can add a bunch of built-in validation directives such as...
+	ng-required
+	ng-minlength
+	ng-maxlength
+	ng-pattern (must pass regex test)
+	type="email/number/url"
+
+- <forms> are also bound to ngModelController instances 
+
+$error under the form or input controller will give us access to the errors 
+	--> it is by default an empty object 
